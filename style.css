@@ -1,0 +1,400 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    background: limegreen;
+    height: 80px;
+    width: 100%;
+}
+label.logo {
+    position: absolute;
+    color: lime;
+    font-size: 15px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    float: left;
+    margin-top: 5px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius:4px;
+}
+.homepic {
+    width:100%;
+}
+a.active, a:hover{
+    background:#6f8da4;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: lightgrey;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width: 952){
+    label.logo{
+        font-size: 25px;
+        padding-left:50px;
+    }
+nav ul li a{
+    font-size: 16px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #54606e;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color:#52FF33;
+    }
+#check:checked ~ ul {
+    left: 0;
+    }   
+}
+.homepic{
+    background: url(Images/students-1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    max-width: 100%;
+}
+#headtitle{
+    text-align: center;
+    color:#52FF33;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+#banner-text {
+    color: white;
+    top: 500px;
+    padding: 320px 20px 500px 0;
+    text-transform: uppercase;
+    position: static;
+    text-align: center;
+    white-space: pre-wrap;  
+}
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    color: white;
+}
+.box {
+    width: 325px;
+    background-color: #54606e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    margin-right: 20px;
+}
+
+.box img {
+width: 100%;
+height: 300px;
+}
+.box h2 {
+    text-align: center;
+    color: #52FF33;
+}
+.box a{
+    text-align: center;
+}
+.box p{
+    margin-left: 8px;
+}
+.box .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: azure;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+footer p{
+    text-transform: uppercase;
+}
+.intro-text {
+    text-align: center;
+    background-color: #54606e;
+    color: whitesmoke;
+    padding: 20px;
+}
+.intro-text h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.intro-text h2 {
+    color: #52FF33;
+    font-size: 15px;
+}
+@media (max-width: 767px){
+    .intro-text h1{
+        font-size: 18px;
+    }
+    .intro-text h2{
+        font-size: 16px;
+    }
+}
+/*  About us page codes */
+#top-banner {
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+}
+#top-banner h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: crimson;
+}
+#top-banner p{
+    font-size: 20px;
+}
+
+#mid-banner h2{
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: greenyellow;
+}
+#mid-banner p{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.e-footer {
+    padding-top: 20px;
+}
+.e-footer h2{
+    font-size: 20px;
+    color: #52FF33;
+}
+#end-banner {
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+}
+#end-banner h2{
+    font-size: 30px;
+    color: #52FF33;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+#end-banner p {
+    font-size: 20px;
+}
+/*Activities Page css*/
+
+.c-section {
+    margin: 0px;
+    padding: 0px;
+}
+.c-section h1 {
+    padding-top: 30px;
+    color: #52FF33;
+    font-size: 30px;
+    text-align: center;
+}
+.c-section p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*create container to have two sub categories within design */
+.A-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    color: black;
+}
+
+.A-container h2{
+    text-align: center;
+    padding-top: 10px;
+    color: #52FF33;
+}
+.A-container img{
+    width: 100%;
+    height: 500px;
+}
+.holder {
+    width: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    /*box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
+    margin: 20px;
+    margin-right: 20px;
+}
+button{
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto; 
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.z-pics{
+    background-color: purple;
+}
+.pay-pics{
+    background-color: navy;
+    border: navy;
+}
+
+@media (max-width: 800px){
+    img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    button{
+        display: block;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto; 
+        font-size: 15px;
+    }
+
+    .peek{
+        position: absolute;
+        height: auto;
+        float: left;
+        width: 350px;
+        height: 38px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }   
+}
+/*Service */
+.service-banner {
+    background: url(Images/after-6.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    max-width: 100%;
+}
+#sbanner-text {
+    color: white;
+    top: 500px;
+    padding: 320px 20px 500px 0;
+    text-transform: uppercase;
+    position: static;
+    text-align: center;
+    white-space: pre-wrap;  
+    font-size: 40px;
+}
+
+#sbanner-text:hover {
+    color: #52FF33;
+    background: none;
+}
+.service-banner:hover {
+    background-color: aquamarine;
+    opacity: 0.9;
+}
+.service-content h1 {
+    text-align: center;
+    color: #52FF33;
+    text-transform: uppercase;
+}
+.service-content p {
+    font-size: 20px;
+}
+#p-font{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+ol {
+    text-align: center;
+    list-style-position: inside;
+}
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+.peek {
+    position: absolute;
+    height: auto;
+    left: 0px;
+    width: 250px;
+    margin-top: 30px;
+}
+
+#value-banner{
+    background-color: #54606e;
+    padding-bottom: 20px;
+    border: 5px groove gray;
+}
+#value-banner h2{
+text-transform: uppercase;
+padding-top: 10px;
+text-align: center;
+font-size: 30px;
+color: #52FF33;
+}
