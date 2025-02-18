@@ -305,7 +305,22 @@ button{
     background-color: navy;
     border: navy;
 }
-
+.break {
+        width: 70px;
+        height: .45em;
+        bottom: 0;
+        margin-top: 3px;
+        background-image: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgb(111 141 164);
+        margin-left: 5px;
+       }
 @media (max-width: 800px){
     img {
         width: auto;
