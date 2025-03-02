@@ -446,3 +446,9 @@ font-size: 20px;
     90%{left: -400%;}
     100%{left: -500%;} 
 }
+@media (max-width: 1080){
+    #slider{
+    width: 1080px;
+    Height: 600px
+    }
+}
