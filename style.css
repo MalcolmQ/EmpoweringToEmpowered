@@ -449,6 +449,6 @@ font-size: 20px;
 @media (max-width: 1080){
     #slider{
     width: 1080px;
-    Height: 900px
+    Height: auto;
     }
 }
