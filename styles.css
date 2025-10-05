@@ -117,6 +117,9 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
   }
+  .logo{
+    text-align: center;
+  }
 }
 img {
   max-width: 100%;
@@ -129,5 +132,6 @@ u{
     text-decoration-color: #FFD700;
 
 }
+
 
 
