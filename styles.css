@@ -16,6 +16,7 @@ nav {
     font-size: 1.5rem;
     margin-right: 5px;
     margin-top: -10px;
+    margin-bottom: -10px;
 }
 .nav-links li{
     display: inline-block;
@@ -128,4 +129,5 @@ u{
     text-decoration-color: #FFD700;
 
 }
+
 
