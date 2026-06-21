@@ -9,166 +9,84 @@
 </head>
 <body>
     <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <a href="index.html"><img src="Images/E2E-logo-3.png" alt="logo" class="peek" width="250px"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Activities.html">Activities</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
-            <li><a href="Donate.html">Donate</a></li>
-            <li><a href="AssistedLiving.html">LLAL</button></a></li>
-        </ul>
-    </nav>
-    <section class="intro-container">
-        <h1>We need your help</h1>
-        <div class="break"></div>
-        <p>As a non-profit organization, we rely on donations to provide after school programs and clinical services to the youth and women in Liberia. They deserve: quality education to learn skills that foster self-sufficiency in entrepeneurship, access to technology, and access to important health resources. So that children can grow, knowing they a have bright future ahead of them. We have an available 501C <a href="tel:8623359812">contact us</a> for more info.</p>
-        <br>
-        <br>
-    </section>
-    <div class="D-container">
-       <h1 style=> Donate Today</h1>
-       <br>
-       <h3>We currently have these donation options: </h3>
-       <h2>Cash App</h2>
-      <img src="Images/CashApp-1.png" alt="cash app symbol">
-       <!----<a href="https://cash.app/$ElizabethBowensYTH" class="btn">Donate</a>--->
-       <a href="https://cash.app/$ElizabethBowensYTH"><button style="background-color: #52FF33; border: #52FF33;">Donate</button></a>
-       <h2 class="zelle">Zelle</h2>
-        <p>Use this information below to donate via our zelle: </p>
-        <br />
-        <p>Business name: Elizabeth Bowens Comm Youth Center</p>
-        <p>Phone: 8623359812 (Enter in business tab of zelle)</p>
-        <p>Email: empoweringtoempowered@gmail.com</p>
-        <!---<img src="Images/QR-CODE-E2E.jpg" alt="Zelle QR Code" style="width:200px; height:auto; margin-left: 150px; margin-right: auto;">--->
-       <!--<img src="Images/Zelle-Logo.png" alt="Zelle Symbol">-->
-       <!----<a href="https://www.zellepay.com/qr-codes/?data=eyJhY3Rpb24iOiJwYXltZW50IiwibmFtZSI6IkVMSVpBQkVUSCBCT1dFTlMgQ09NTSBZT1VUSCBDRU5URVIgQWNjb3VudHMiLCJxckNvZGVOYW1lIjoiRUxJWkFCRVRIIEJPV0VOUyBDT01NIFlPVVRIIENFTlRFUiIsInRva2VuIjoiODYyMzM1OTgxMiJ9"><button class="z-pics" style="border: purple;">Donate</button></a>--->
-       <br>
-       <!--<h2 class="paypal">PayPal</h2>
-       <img src="Images/paypal-logo.png">
-       <a href="https://paypal.com/"><button class="pay-pics">Donate</button></a>
-       <br>
-        -->
-
+        <ul class="sidenav">
+        <li onclick=hideSidenav() ><a href="#" class="no-underline"><svg class="no-underline"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#52FF33"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="Activities.html">Activities</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="Donate.html" class="donate-btn no-underline">Donate</a></li>
+        <li><a href="AssistedLiving.html">LLAL</a></li>
+    </ul>
+    <ul>
+                <li style="font-weight: bolder; "><a href="index.html" class="no-underline">EmpoweringToEmpowered</a></li>
+                <li class="hideOnMobile"><a href="Activities.html">Activities</a></li>
+                <li class="hideOnMobile"><a href="Services.html">Services</a></li>
+                <li class="hideOnMobile"><a href="AboutUs.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="Donate.html" class="donate-btn no-underline">Donate</a></li>
+                <li class="hideOnMobile"><a href="AssistedLiving.html">LLAL</a></li>
+                <li class="menu-button" onclick=showSidenav()><a href="#" class="no-underline"><svg style="margin-top: 20px;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#52FF33"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    <section class="donation-hero">
+    <div class="donation-hero-overlay"></div>
+    <div class="donation-hero-content">
+        <h1 style="color: white;">Your Gift Changes Lives</h1>
+        <p>
+            Every donation helps provide education, life‑skills training, and essential clinical care 
+            to youth and women in Liberia. Your generosity gives hope, dignity, and a pathway to a 
+            brighter future.
+        </p>
     </div>
-    <style>
-        body{
-            background-image:url("Images/Helping-1.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
-            overflow-x: hidden;
-        }
-        .D-container {
-            color: black;
-            background-color: lightgrey;
-            width: 500px;
-            height: auto;;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-        .D-container h1{
-            position: static;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 100px;
-        }
-        .D-container img{
-            position: static;
-            width: 300px;
-            height: auto;
-            margin-top: 20px;
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-        .D-container h3{
-            color: black;
-            text-align: center;
-        }
-        .D-container h2 {
-            text-align: center;
-            color: green;
-            font-size: 25px;
-            padding-top: 15px;
-        }
-        .D-container .zelle{
-            color: purple;
-            padding-top: 20px;
-            font-size: 25px;
-        }
-        .D-container .paypal {
-            color: navy;
-            font-size: 25px;
-        }
-        .D-container p {
-            text-align: center;
-            color: black;
-            font-weight: bold;
-        }
-        /*.D-container .btn {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #52ff33;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-top: 16px;
-            color: azure;
-            margin-bottom: 10px;
-            text-align: center;
-            margin-left: 210px;
-            margin-right: auto;     
-        }
-        */
-        @media(max-width:767px) {
-        .D-container{
-            width: 100%;
-            overflow-x: hidden;
-        }
-         .D-container img{   
-            width: 100%;
-            padding-right: 200px;
-            overflow-x: hidden;
-        }
-        }
-        .intro-container {
-            background-color: white;
-            width: 100%;
-            height: 100%;
-            color: green;
-        }
-        .intro-container h1{
-            font-size: 30px;
-        }
-        .intro-container p{
-            padding-top: 30px;
-            font-size:  20px;
-        }
-    </style>
+</section>
+
+<section class="donation-intro">
+    <h2>Why Your Support Matters</h2>
+    <p>
+        As a nonprofit organization, we rely on the kindness of donors like you to sustain our 
+        after‑school programs, technology access, women’s empowerment initiatives, and community 
+        health outreach. Your contribution directly impacts the lives of children and families 
+        who deserve opportunity, safety, and hope.
+    </p>
+</section>
+
+<section class="donation-options">
+    <h2>Choose a Donation Method</h2>
+
+    <div class="donation-card">
+        <h3>Cash App</h3>
+        <img src="Images/CashApp-1.png" alt="Cash App Logo">
+        <a href="https://cash.app/$ElizabethBowensYTH" class="donate-btn-large">Donate via Cash App</a>
+    </div>
+
+    <div class="donation-card">
+        <h3>Zelle</h3>
+        <img src="Images/QR-CODE-E2E.jpg" alt="Zelle QR Code" class="qr-img">
+        <img src="Images/Zelle-Logo.png" alt="Zelle Logo" class="small-logo">
+        <a href="https://www.zellepay.com/qr-codes/?data=eyJhY3Rpb24iOiJwYXltZW50IiwibmFtZSI6IkVMSVpBQkVUSCBCT1dFTlMgQ09NTSBZT1VUSCBDRU5URVIgQWNjb3VudHMiLCJxckNvZGVOYW1lIjoiRUxJWkFCRVRIIEJPV0VOUyBDT01NIFlPVVRIIENFTlRFUiIsInRva2VuIjoiODYyMzM1OTgxMiJ9" 
+           class="donate-btn-large purple">Donate via Zelle</a>
+    </div>
+
+    <div class="donation-card">
+        <h3>PayPal</h3>
+        <img src="Images/paypal-logo.png" alt="PayPal Logo">
+        <a href="https://paypal.com" class="donate-btn-large navy">Donate via PayPal</a>
+    </div>
+</section>
+<script src="script.js"></script>
 </body>
 <footer class="e-footer" style="background-color: #54606e; color: white;">
     <br>
     <h2>Location</h2>
-    <p>Lorpu Lemue Compound Cotal Field GSA ROAD, MONROVIA, LIBERIA</p>
+    <p>Lorpu Lemue Compound Cotal Field GSA ROAD</p>
     <br>
     <h2>Contact Us</h2>
     <img src="Images/phone-call.png" alt="phone" style=" width: 15px; height: auto;">
-    <a href="tel:8623359812">Click to call us</a>
+    <a href="tel:9739463133">Click to call us</a>
     <br>
     <img src="Images/email.png" alt="letter" style="width: 15px; height: auto;">
-    <a href="mailto:empoweringtoempowered@gmail.com" subject="Feedback&Body">Send Us Feedback</a>  
+    <a href="mailto:lapowerllc@gmail.com" subject="Feedback&Body">Send Us Feedback</a>  
     <br>
     <br>
     &copy; Copyright Reserved<br>
 </footer>
 </html>
-
