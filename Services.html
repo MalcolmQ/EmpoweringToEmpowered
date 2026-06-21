@@ -9,76 +9,93 @@
 </head>
 <body>
     <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <a href="index.html"><img src="Images/E2E-logo-3.png" alt="logo" class="peek" width="250px"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Activities.html">Activities</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
-            <li><a href="Donate.html">Donate</a></li>
-            <li><a href="AssistedLiving.html">LLAL</button></a></li>
+        <ul class="sidenav">
+        <li onclick=hideSidenav() ><a href="#" class="no-underline"><svg class="no-underline"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#52FF33"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="Activities.html">Activities</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="Donate.html" class="donate-btn no-underline">Donate</a></li>
+        <li><a href="AssistedLiving.html">LLAL</a></li>
+    </ul>
+    <ul>
+                <li style="font-weight: bolder; "><a href="index.html" class="no-underline">EmpoweringToEmpowered</a></li>
+                <li class="hideOnMobile"><a href="Activities.html">Activities</a></li>
+                <li class="hideOnMobile"><a href="Services.html">Services</a></li>
+                <li class="hideOnMobile"><a href="AboutUs.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="Donate.html" class="donate-btn no-underline">Donate</a></li>
+                <li class="hideOnMobile"><a href="AssistedLiving.html">LLAL</a></li>
+                <li class="menu-button" onclick=showSidenav()><a href="#" class="no-underline"><svg style="margin-top: 20px;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#52FF33"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    <section class="services-hero">
+    <div class="services-hero-overlay"></div>
+    <div class="services-hero-content">
+        <h1 style="color: white;">After School Programs & Community Services</h1>
+        <p>Supporting youth and women through education, discipline, health care, and community engagement.</p>
+    </div>
+</section>
+
+<section class="service-section">
+    <div class="service-text">
+        <h2>After School Programs</h2>
+        <p>
+            Our youth participate in academic support, skill‑building activities, and social engagement. 
+            We also provide recreational time, games, and movie days to reward their hard work and dedication.
+        </p>
+    </div>
+    <img src="Images/bible-study-1.jpg" alt="Youth in study session">
+</section>
+
+<section class="service-section reverse">
+    <img src="Images/bible-study-1.jpg" alt="Study hall">
+    <div class="service-text">
+        <h2>General Discipline & Character Building</h2>
+        <p>We help youth develop:</p>
+        <ul class="service-list">
+            <li>Good study habits</li>
+            <li>Persistence and resilience</li>
+            <li>Healthy personal systems and routines</li>
+            <li>Proper etiquette and decorum</li>
         </ul>
-    </nav>
-    <div class="service-banner">
-        <div class="overlay">
-            <h2 id="sbanner-text">AFTER SCHOOL Programs</h2>
-        </div>
     </div>
-    <div class="service-content">
-    <div>
-        <h1 style="padding-top: 10px;">What is happening After School?</h1>
-        <!---<video style="display: block; margin-left: auto; margin-right: auto; " width="320" height="240" controls>
-          <source src="Media/Singing-1.mp4"" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>--->
-        <p style="text-align: center;">The youth are involved in various extracurriculuar activities and studies, to continue to strengthen their academic skillsets and also be involved socially with one another. 
-            There are occasions where we have the children involved in recreational fun, games and movies etc for all their hard work, time and devotion they put in to sharpening their skills.  </p>
-            <img style="height: 600px; border-radius: 10px;" src="Images/Education-1.jpg" alt="bible study with youth" class="img-center">
-        <!---Study hall and bible class-->
+</section>
+
+<section class="clinic-section">
+    <h2>Lorpu Lemue Maternal Child Health & Community Medical Clinic</h2>
+    <p>
+        Our clinic provides essential health services including general assessments, prenatal care, 
+        labor and delivery support, diagnostic evaluations, and counseling for mothers and children.
+    </p>
+
+    <div class="clinic-gallery">
+        <img src="Images/clinic-1.jpg" alt="Nurse caring for baby">
+        <img src="Images/clinic-2.jpg" alt="Clinic supplies">
+        <img src="Images/clinic-3.jpg" alt="Doctor care">
     </div>
-    <div style="padding-bottom: 50px;">
-        <h1 style="text-align: center;">General Discipline</h1>
-        <p style="font-size: 20px; font-weight: bold; text-align: center;">When it comes to our youth we aim for them to build:</p>
-        <ol style="font-weight: bold; padding-top: 10px;">
-            <li>1.Good Study Habits</li>
-            <li>2.Persistence</li>
-            <li>3.Building Healthy and efficient systems in their lives</li>
-            <li>4.Good Ettiquette/Decorum </li>
-        </ol>
-    </div>
-    <div style="background-color:#99A3A7; border: 10px groove #52FF33; color: white; font-weight: bold;">
-        <h1 style="padding-top: 20px; font-size: 35px;">Lorpue Lemue Maternal Child Health & Community Medical Clinic</h1>
-        <img src="Images/clinic-3.jpg" alt="Doctor evaluating patients" class="img-center" style="width: 600px; height:auto;">
-        <p id="p-font">The Elizabeth Bowens Youth and Women empowerment program also has a clinic named "Lorpu Lemue Maternal Child Health & Community Medical Clincic" in place that provides general assessments, prenatal care, labor and delivery, diagnosis evaluations, and counseling. </p>
-        <img src="Images/clinic-`.jpg" alt="Baby being taken care of by nurse" class="img-center" style="border-radius: 8px;">
-        <p id="p-font">The general assessments includes Monitoring patients vitals, Conducting physical examinations, and performing diagnostic tests. Our clinic provides support for the mothers and the children along with advice to the patients based on their diagnosis/ results of their assessments. </p>
-        <img src="Images/clinic-2.jpg" alt="Nurse in clinc supplies" class="img-center">
-        <p id="p-font" style="padding-bottom: 20px;">You can <a href="tel:8623359812">contact us</a> to find out ways you can support our clinics work in the community.</p>
-        <!---Delivery, general assessment , prenatal care, labor and delivery, diagnosis evaluations, counseling-->
-        
-    </div>
-    </div>
+
+    <p>
+        Services include monitoring vitals, physical examinations, diagnostic testing, and providing 
+        guidance based on assessment results.  
+        <br><br>
+        You can <a href="tel:9739463133">contact us</a> to learn how to support our clinic’s work.
+    </p>
+</section>
+<script src="script.js"></script>
 </body>
 <hr>
 <footer class="e-footer" style="background-color: #54606e; color: white;">
     <br>
     <h2>Location</h2>
-    <p>Lorpu Lemue Compound Cotal Field GSA ROAD, MONROVIA LIBERIA</p>
+    <p>Lorpu Lemue Compound Cotal Field GSA ROAD</p>
     <br>
     <h2>Contact Us</h2>
     <img src="Images/phone-call.png" alt="phone" style=" width: 15px; height: auto;">
-    <a href="tel:8623359812">Click to call us</a>
+    <a href="tel:9739463133">Click to call us</a>
     <br>
     <img src="Images/email.png" alt="letter" style="width: 15px; height: auto;">
-    <a href="mailto:empoweringtoempowered@gmail.com
-        " subject="Feedback&Body">Send Us Feedback</a>  
+    <a href="mailto:lapowerllc@gmail.com" subject="Feedback&Body">Send Us Feedback</a>  
     <br>
     <br>
     &copy; Copyright Reserved<br>
 </footer>
 </html>
-
